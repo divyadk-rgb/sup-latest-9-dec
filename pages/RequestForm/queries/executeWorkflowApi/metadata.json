@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"requestId\": \"{{ appsmith.store.UUID}}\",\n\t\"workflowType\": \"{{ \"firewallcheck\" }}\",\n\t\"targetEnvironment\": \"{{en.selectedOptionValue }}\",\n\t\"requestData\": \"{{ \n\tJSON.stringify({\n\t\tsourceIp: srcIp.text,\n\t\tdestinationIp: destIp.text\n\t}) \n\t}}\"\n}",
+      "body": "{\n\t\"requestId\": \"{{ appsmith.store.UUID}}\",\n\t\"workflowType\": \"{{ \"firewallcheck\" }}\",\n\t\"targetEnvironment\": \"{{envLabel.selectedOptionValue }}\",\n\t\"requestData\": \"{{ \n\tJSON.stringify({\n\t\tsourceIp: srcIp.text,\n\t\tdestinationIp: destIp.text\n\t}) \n\t}}\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
