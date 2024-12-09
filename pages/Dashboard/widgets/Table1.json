@@ -38,7 +38,9 @@
     "updated_at"
   ],
   "columnUpdatedAt": 1733332254953,
-  "columnWidthMap": {},
+  "columnWidthMap": {
+    "request_id": 295
+  },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
