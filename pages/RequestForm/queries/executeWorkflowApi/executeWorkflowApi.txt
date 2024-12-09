@@ -1,0 +1,13 @@
+{
+	"requestId": "{{}}",
+	// "requestId": "{{ constants.generateUUID()}}",
+
+	"workflowType": "{{ "firewallcheck" }}",
+	"targetEnvironment": "{{ envLabel.selectedOptionValue }}",
+	"requestData": "{{ 
+	JSON.stringify({
+		sourceIp: srcIp.text,
+		destinationIp: destIp.text
+	}) 
+	}}"
+}

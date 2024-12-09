@@ -1,0 +1,10 @@
+CREATE TABLE workflows (
+    request_id VARCHAR(64),
+    workflow_type VARCHAR(255),
+    requested_by VARCHAR(255),
+    environment_label VARCHAR(1024),
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMPTZ,
+    request_data VARCHAR,
+    status VARCHAR(25)
+);
